@@ -1,7 +1,10 @@
 -r requirements.txt
 black==21.11b1
+coverage==6.1.2
 isort==5.10.1
 pre-commit==2.15.0
+pytest-django==4.4.0
+responses==0.15.0
 
 # mypy and PEP 561 stubs
 mypy==0.910
