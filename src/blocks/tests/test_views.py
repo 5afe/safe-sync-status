@@ -3,7 +3,7 @@ from django.urls import reverse
 
 
 class IndexViewTestCase(SimpleTestCase):
-    def test_index(self):
+    def test_index(self) -> None:
         url = reverse("index")
 
         response = self.client.get(path=url, data=None)
