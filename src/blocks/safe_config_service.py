@@ -15,7 +15,7 @@ class Chain:
 
 
 def get_chains() -> List[Chain]:
-    base_url = "https://safe-config.staging.gnosisdev.com"  # change to envar
+    base_url = "https://safe-config.gnosis.io"  # change to envar
     path = "/api/v1/chains/"
     url = urljoin(base=base_url, url=path)
 
