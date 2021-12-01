@@ -128,3 +128,7 @@ STATIC_ROOT = "staticfiles"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 INFURA_PROJECT_ID = os.getenv("INFURA_PROJECT_ID")
+
+SAFE_CONFIG_BASE_URL = os.getenv(
+    "SAFE_CONFIG_BASE_URL", "https://safe-config.gnosis.io"
+)

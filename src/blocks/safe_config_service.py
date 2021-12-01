@@ -3,6 +3,7 @@ from typing import List
 from urllib.parse import urljoin
 
 import requests
+from django.conf import settings
 from requests import Response
 
 
@@ -15,7 +16,7 @@ class Chain:
 
 
 def get_chains() -> List[Chain]:
-    base_url = "https://safe-config.gnosis.io"  # change to envar
+    base_url = settings.SAFE_CONFIG_BASE_URL
     path = "/api/v1/chains/"
     url = urljoin(base=base_url, url=path)
 
